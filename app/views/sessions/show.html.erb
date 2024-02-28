@@ -1,0 +1,11 @@
+<h1> result </h1>
+<%= @user.id %>
+<%= @user.user_id %>
+<%= @user.username %>
+<% if lecturer?(@user)%>
+  <h1> Lecturer</h1>
+  <%else %>
+  <h1> Student</h1>
+<%end %>
+<h3> <%= link_to 'logout', logout_path,
+                 data: {turbo_method: "delete", turbo_confirm: 'Logout from account'} %></h3>
