@@ -67,3 +67,4 @@ group :test do
 end
 
 gem 'mysql2'
+gem 'bcrypt', '~> 3.1.7'
