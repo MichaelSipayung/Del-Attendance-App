@@ -1,0 +1,7 @@
+<h1>Courses</h1>
+<ul>
+  <% @courses.each do |course| %>
+    <li> <%=course.pengajaran_id %></li>
+    <li> <%=course.role_pengajar_id %></li>
+  <%end %>
+</ul>
